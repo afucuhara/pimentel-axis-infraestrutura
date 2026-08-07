@@ -586,9 +586,9 @@ html, body { width: 100%; min-width: 0; overflow-x: hidden; }
 .pa-html-export .service-card p {
   min-height: 88px !important;
   margin-top: 10px;
-  margin-bottom: 0 !important;
+  margin-bottom: 24px !important;
 }
-.pa-html-export .service-card a { margin-top: auto; }
+.pa-html-export .service-card a { margin-top: auto; margin-bottom: 18px !important; }
 .pa-html-export .wa-icon {
   background: #25d366 !important;
   color: #fff !important;
@@ -748,6 +748,24 @@ html, body { width: 100%; min-width: 0; overflow-x: hidden; }
     min-height: 680px !important;
     padding-top: 142px !important;
     padding-bottom: 72px !important;
+  }
+}
+</style>
+<style>
+/* Respiro inferior visível entre o CTA e a borda dos cards */
+.pa-html-export .service-card {
+  padding-bottom: 30px !important;
+  height: 390px !important;
+  min-height: 390px !important;
+}
+.pa-html-export .service-card > a {
+  margin-top: auto !important;
+  margin-bottom: 30px !important;
+}
+@media (max-width: 640px) {
+  .pa-html-export .service-card {
+    height: 350px !important;
+    min-height: 350px !important;
   }
 }
 </style>
