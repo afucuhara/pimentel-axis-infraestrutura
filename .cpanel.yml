@@ -2,5 +2,5 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/pimentel/public_html/
-    - /bin/cp -a public/. "$DEPLOYPATH"
-    - /bin/cp public/pimentel-axis-widget.html "${DEPLOYPATH}index.html"
+    - /bin/cp -R public/. $DEPLOYPATH
+    - /bin/cp public/pimentel-axis-widget.html ${DEPLOYPATH}index.html
